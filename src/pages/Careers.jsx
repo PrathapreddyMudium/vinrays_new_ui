@@ -1,26 +1,69 @@
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Job from "../components/Job";
 import Modal from "../components/Modal";
+import PaginationComponent from "../components/Pagination";
 
 const Careers = () => {
-  const Jobs_Data = [
-    {
-      "job_title": "Software Developer",
-      "job_code": 1234,
-      "skills":["Javascript","Springboot","React"],
-      "responsibilities":["Design","Develop","Test"]
-    },
-    {
-      "job_title": "Software Developer",
-      "job_code": 1256,
-      "skills":["React","Java","MySql"],
-      "responsibilities":["Design","Develop","Test"]
-    }
-  ]
+  const Jobs_Data = useMemo(() => {
+    return [
+      {
+        job_title: "Software Developer",
+        job_code: 1234,
+        skills: ["Javascript", "Springboot", "React"],
+        responsibilities: ["Design", "Develop", "Test"],
+      },
+      {
+        job_title: "Software Developer",
+        job_code: 1255,
+        skills: ["React", "Java", "MySql"],
+        responsibilities: ["Design", "Develop", "Test"],
+      },
+      {
+        job_title: "Software Developer",
+        job_code: 1236,
+        skills: ["Javascript", "Springboot", "React"],
+        responsibilities: ["Design", "Develop", "Test"],
+      },
+      {
+        job_title: "Software Developer",
+        job_code: 1257,
+        skills: ["React", "Java", "MySql"],
+        responsibilities: ["Design", "Develop", "Test"],
+      },
+      {
+        job_title: "Software Developer",
+        job_code: 1238,
+        skills: ["Javascript", "Springboot", "React"],
+        responsibilities: ["Design", "Develop", "Test"],
+      },
+      {
+        job_title: "Software Developer",
+        job_code: 1259,
+        skills: ["React", "Java", "MySql"],
+        responsibilities: ["Design", "Develop", "Test"],
+      },
+    ];
+  }, []);
+
+  const [jobData, setJobData] = useState(Jobs_Data);
+  const [currentPage, setCurrentPage] = useState(1);
+  const PageSize = 4;
+  const totalPages = Math.ceil(Jobs_Data.length / PageSize);
+  const handlePageChange = (pageNumber) => {
+    console.log(`Fetching data for page ${pageNumber}`);
+    setCurrentPage(pageNumber);
+  };
+
+  useEffect(() => {
+    const firstPageIndex = (currentPage - 1) * PageSize;
+    const lastPageIndex = firstPageIndex + PageSize;
+    const data = Jobs_Data.slice(firstPageIndex, lastPageIndex);
+    setJobData(data);
+  }, [currentPage, Jobs_Data]);
+
   const [modalOpen, setModalOpen] = useState(false);
-  const [jobCode,setJobCode] = useState("");
-  const [jobTitle,setJobtitle] = useState("");
-  console.log(modalOpen);
+  const [jobCode, setJobCode] = useState("");
+  const [jobTitle, setJobtitle] = useState("");
   return (
     <section class="features-sub-head bg-light">
       <div className="title">
@@ -38,15 +81,33 @@ const Careers = () => {
             ever-evolving IT landscape, you've come to the right place.
           </p>
         </div>
-        {modalOpen && <Modal setModalOpen={setModalOpen} job_code={jobCode} job_title={jobTitle}/>}
-        <div className="flex">
-          {Jobs_Data.map((job) => {
-            return <Job data={job} setModalOpen={setModalOpen} setJobCode={setJobCode} setJobTitle={setJobtitle}/>
+        <h2>Current Open Positions</h2>
+        {modalOpen && (
+          <Modal
+            setModalOpen={setModalOpen}
+            job_code={jobCode}
+            job_title={jobTitle}
+          />
+        )}
+        <div className="flex j-flex">
+          {jobData.map((job) => {
+            return (
+              <Job
+                data={job}
+                setModalOpen={setModalOpen}
+                setJobCode={setJobCode}
+                setJobTitle={setJobtitle}
+              />
+            );
           })}
-          {/*<Job setModalOpen={setModalOpen} setJobCode={setJobCode} setJobTitle={setJobtitle}/>
-          <Job setModalOpen={setModalOpen} setJobCode={setJobCode} setJobTitle={setJobtitle}/>*/}
         </div>
-
+        <div>
+          <PaginationComponent
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={handlePageChange}
+          />
+        </div>
         <div>
           <p>
             <h2>Alternative Application Method</h2>

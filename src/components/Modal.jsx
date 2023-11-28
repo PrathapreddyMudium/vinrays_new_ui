@@ -118,6 +118,14 @@ const Modal = (props) => {
               />
             </div>
             <div class="card flex">
+              <input
+                type="file"
+                id="document"
+                name="document"
+                accept=".pdf, .doc, .docx"
+              />
+            </div>
+            <div class="card flex">
               <textarea
                 placeholder="Please provide brief introduction of your skills and experience."
                 name="message"

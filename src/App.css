@@ -120,6 +120,11 @@ i{
   height: 100%;
 }
 
+.j-flex{
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .flex-1 {
   gap: 20px;
 }
@@ -320,9 +325,12 @@ form input.btn-submit {
     padding: 10px;
     margin: 10px;
     width: 300px;
+    height: 300px;
     background-color: #fff;
   }
-  
+  .job-card.overflow-scroll {
+    overflow: scroll;
+  }
   /* Card Title */
   .job-card h2 {
     font-size: 1.5rem;
@@ -362,7 +370,8 @@ form input.btn-submit {
   .horizontal-list {
     list-style-type:disc;
     padding: 0;
-    display: flex; /* Use flexbox to arrange items horizontally */
+    display: flex;
+    flex-wrap: wrap; /* Use flexbox to arrange items horizontally */
   }
   
   /* List Item Styling */
@@ -402,6 +411,9 @@ form input.btn-submit {
     margin: 10px auto;
     padding: 10px;
   }
+  .form-m-p input{
+    padding: 10px;
+  }
     
   .modalContainer .body {
     flex: 50%;
@@ -417,13 +429,13 @@ form input.btn-submit {
     text-align: left;
     margin-top: 0px;
     color: white;
-    background-color: #6f0e6f;
+    background-color: var(--secondary-color);
     border-radius: 4px;
     padding: 10px;
-    font-size: 12px;
+    font-size: 14px;
     }
   .modalContainer {
-    width: 600px;
+    width: 500px;
     height: auto;
     border-radius: 12px;
     background-color: white;
@@ -591,4 +603,43 @@ form input.btn-submit {
 .xl {
   font-size: 3rem;
 
+}
+/* Custom styles for PaginationComponent */
+
+/* Style for the pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Style for pagination items */
+.pagination .page-link {
+  color: white;
+  background-color: var(--secondary-color);  
+  border: 1px solid #dee2e6; /* Add a border around the page numbers */
+  padding: 0 10px;
+  font-size: 1.5em; /* Add padding for better appearance */ /* Bootstrap primary color for links */
+}
+
+/* Style for active page */
+.pagination .page-item.active .page-link {
+  background-color: orangered; /* Bootstrap primary color for active state */
+  border-color: #007bff;
+}
+
+/* Style for hover effect on page items */
+.pagination .page-item:hover .page-link {
+  background-color: #e9ecef; /* Bootstrap background color for hover state */
+}
+
+/* Style for disabled page items */
+.pagination .page-item.disabled .page-link {
+  color: white;
+  background-color: #6c757d; /* Bootstrap text color for disabled state */
+  pointer-events: none; /* Disable click events on disabled items */
+}
+
+span.visually-hidden{
+  display: none;
 }
