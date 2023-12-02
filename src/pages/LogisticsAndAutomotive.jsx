@@ -5,7 +5,7 @@ const LogisticsAndAutomotivePage = () => {
   return (
     <section class="features-sub-head bg-light py-3">
       <div className="title">
-        <h1 class="xl">FinTech Innovations</h1>
+        <h1 class="xl">Logistics & Automotive Software</h1>
       </div>
       <div class="container grid align-items-start">
         <img src={logisticsImage} alt="Logistics & Automotive" />

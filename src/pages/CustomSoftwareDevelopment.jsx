@@ -22,7 +22,7 @@ const CustomSoftwareDevelopment = () => {
       <section class="features-main my-2 values">
         <h1 class="md">Our Approach</h1>
         <div class="container grid shadow-box">
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Strategic Planning</h3>
               <p>We start by gaining a deep understanding of your business goals
@@ -31,7 +31,7 @@ const CustomSoftwareDevelopment = () => {
               objectives, features, and timelines.</p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Tailored Solutions</h3>
               <p>No two businesses are alike, and neither should their software
@@ -40,7 +40,7 @@ const CustomSoftwareDevelopment = () => {
               points and unlocking new opportunities for efficiency and growth.</p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Scalability</h3>
               <p>Future-proof your business with scalable solutions. Our custom
@@ -49,7 +49,7 @@ const CustomSoftwareDevelopment = () => {
               technological advancements.</p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>User-Centric Design</h3>
               <p>User experience is at the forefront of our design philosophy. We
@@ -63,28 +63,28 @@ const CustomSoftwareDevelopment = () => {
       <section class="features-main my-2 values">
         <h1 class="md">Why Choose Custom Software Development with Vinrays?</h1>
         <div class="container grid grid-4 shadow-box">
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Tailored to Your Needs</h3>
               <p>Our solutions are built around your specific requirements,
               ensuring a perfect fit for your business.</p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Scalable and Future-Ready</h3>
               <p>Designed to evolve with your business, our solutions provide
               long-term scalability and adaptability.</p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Security and Compliance</h3>
               <p>We prioritize the security of your data, ensuring compliance with
               industry standards and regulations.</p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Continuous Support</h3>
               <p>Our commitment doesn't end with the delivery. We provide ongoing

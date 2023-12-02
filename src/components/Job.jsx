@@ -10,15 +10,17 @@ const Job = (props) => {
   };
   useEffect(() => {
     // Check if the content overflows the card
-    const isOverflowing = cardRef.current.scrollHeight > cardRef.current.clientHeight;
-    console.log(cardRef.current.scrollHeight)
-    console.log(cardRef.current.clientHeight)
+    const isOverflowing =
+      cardRef.current.scrollHeight > cardRef.current.clientHeight;
     // Update the state based on overflow condition
     setShouldShowScroll(isOverflowing);
   }, [props.data.job_code]);
 
   return (
-    <div className={`job-card ${shouldShowScroll ? 'overflow-scroll' : ''}`} ref={cardRef}>
+    <div
+      className={`job-card ${shouldShowScroll ? "overflow-scroll" : ""}`}
+      ref={cardRef}
+    >
       <h2>{props.data.job_title}</h2>
       <div>
         <strong className="job-code">Job Code: </strong>

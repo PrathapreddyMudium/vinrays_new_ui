@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import MyLink from "./MyLink";
 
 const NavBar = () => {
   return (
@@ -7,22 +7,25 @@ const NavBar = () => {
       <div class="container flex">
         <h1 class="logo">Vinrays</h1>
         <nav>
-          <ul className="main-menu flex flex-1">
+          <ul className="main-menu flex-1">
             <li>
               <a href="/">Company</a>
               <div className="sub-menu">
                 <ul>
                   <li>
-                  <Link to="/about">About Us</Link>
+                    <MyLink toValue="/about">About Us</MyLink>
                   </li>
                   <li>
-                    <Link to="/principles">Our Vision, Mission, and Values</Link>
+                    {/*<Link to="/principles" onClick={handleOnClick}>Our Vision, Mission, and Values</Link>*/}
+                    <MyLink toValue="principles">
+                      Our Vision, Mission, and Values
+                    </MyLink>
                   </li>
                   <li>
-                    <Link to="/careers">Careers</Link>
+                    <MyLink toValue="/careers">Careers</MyLink>
                   </li>
                   <li>
-                    <Link to="/contactus">Contact Us</Link>
+                    <MyLink toValue="/contactus">Contact Us</MyLink>
                   </li>
                 </ul>
               </div>
@@ -32,16 +35,18 @@ const NavBar = () => {
               <div className="sub-menu">
                 <ul>
                   <li>
-                    <Link to="/software">Custom Software Development</Link>
+                    <MyLink toValue="/software">
+                      Custom Software Development
+                    </MyLink>
                   </li>
                   <li>
-                    <Link to="/digital">Digital Transformation</Link>
+                    <MyLink toValue="/digital">Digital Transformation</MyLink>
                   </li>
                   <li>
-                    <Link to="/consulting">IT Consulting</Link>
+                    <MyLink toValue="/consulting">IT Consulting</MyLink>
                   </li>
                   <li>
-                    <Link to="/staffing">Staffing</Link>
+                    <MyLink toValue="/staffing">Staffing</MyLink>
                   </li>
                 </ul>
               </div>
@@ -51,28 +56,28 @@ const NavBar = () => {
               <div className="sub-menu">
                 <ul>
                   <li>
-                    <Link to="/construction">Construction</Link>
+                    <MyLink toValue="/construction">Construction</MyLink>
                   </li>
                   <li>
-                    <Link to="/travel">Travel & Hospitality</Link>
+                    <MyLink toValue="/travel">Travel & Hospitality</MyLink>
                   </li>
                   <li>
-                    <Link to="/retail">Retail & E-Commerce</Link>
+                    <MyLink toValue="/retail">Retail & E-Commerce</MyLink>
                   </li>
                   <li>
-                    <Link to="/healthcare">Healthcare</Link>
+                    <MyLink toValue="/healthcare">Healthcare</MyLink>
                   </li>
                   <li>
-                    <Link to="/dental">Dental</Link>
+                    <MyLink toValue="/dental">Dental</MyLink>
                   </li>
                   <li>
-                    <Link to="/insurance">Insurance</Link>
+                    <MyLink toValue="/insurance">Insurance</MyLink>
                   </li>
                   <li>
-                    <Link to="/fintech">FinTech</Link>
+                    <MyLink toValue="/fintech">FinTech</MyLink>
                   </li>
                   <li>
-                    <Link to="/logistics">Logistics & Automotive</Link>
+                    <MyLink toValue="/logistics">Logistics & Automotive</MyLink>
                   </li>
                 </ul>
               </div>

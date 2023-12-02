@@ -11,8 +11,8 @@ const Footer = () => {
         <nav>
           <ul>
             <li><a href="/">Company</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Industries</a></li>
+            <li><a href="/software">Services</a></li>
+            <li><a href="/construction">Industries</a></li>
           </ul>
         </nav>
         <div class="social"> 

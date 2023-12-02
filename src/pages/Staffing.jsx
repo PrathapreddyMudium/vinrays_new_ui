@@ -23,7 +23,7 @@ const Staffing = () => {
       <section class="features-main my-2 values">
         <h1 class="md">Our Staffing Approach</h1>
         <div class="container grid shadow-box">
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Tailored Solutions</h3>
               <p>
@@ -34,7 +34,7 @@ const Staffing = () => {
               </p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Proactive Talent Acquisition</h3>
               <p>
@@ -45,7 +45,7 @@ const Staffing = () => {
               </p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Strategic Recruitment</h3>
               <p>
@@ -56,7 +56,7 @@ const Staffing = () => {
               </p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Flexible Staffing Models</h3>
               <p>
@@ -71,7 +71,7 @@ const Staffing = () => {
       <section class="features-main my-2 values">
         <h1 class="md">Our Staffing Services</h1>
         <div class="container grid shadow-box">
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Temporary Staffing</h3>
               <p>
@@ -81,7 +81,7 @@ const Staffing = () => {
               </p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Permanent Placement</h3>
               <p>
@@ -91,7 +91,7 @@ const Staffing = () => {
               </p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Contract-to-Hire</h3>
               <p>
@@ -101,7 +101,7 @@ const Staffing = () => {
               </p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Specialized Recruitment</h3>
               <p>
@@ -116,7 +116,7 @@ const Staffing = () => {
       <section class="features-main my-2 values">
         <h1 class="md">Why Choose Staffing Services from Vinrays?</h1>
         <div class="container grid shadow-box">
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Industry Expertise</h3>
               <p>
@@ -126,7 +126,7 @@ const Staffing = () => {
               </p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Quick Turnaround</h3>
               <p>
@@ -136,7 +136,7 @@ const Staffing = () => {
               </p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Client-Centric Approach</h3>
               <p>
@@ -147,7 +147,7 @@ const Staffing = () => {
               </p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Quality Assurance</h3>
               <p>

@@ -2,47 +2,11 @@ import React, { useEffect, useMemo, useState } from "react";
 import Job from "../components/Job";
 import Modal from "../components/Modal";
 import PaginationComponent from "../components/Pagination";
+import jobData1 from "../data/jobdetails.json";
 
 const Careers = () => {
   const Jobs_Data = useMemo(() => {
-    return [
-      {
-        job_title: "Software Developer",
-        job_code: 1234,
-        skills: ["Javascript", "Springboot", "React"],
-        responsibilities: ["Design", "Develop", "Test"],
-      },
-      {
-        job_title: "Software Developer",
-        job_code: 1255,
-        skills: ["React", "Java", "MySql"],
-        responsibilities: ["Design", "Develop", "Test"],
-      },
-      {
-        job_title: "Software Developer",
-        job_code: 1236,
-        skills: ["Javascript", "Springboot", "React"],
-        responsibilities: ["Design", "Develop", "Test"],
-      },
-      {
-        job_title: "Software Developer",
-        job_code: 1257,
-        skills: ["React", "Java", "MySql"],
-        responsibilities: ["Design", "Develop", "Test"],
-      },
-      {
-        job_title: "Software Developer",
-        job_code: 1238,
-        skills: ["Javascript", "Springboot", "React"],
-        responsibilities: ["Design", "Develop", "Test"],
-      },
-      {
-        job_title: "Software Developer",
-        job_code: 1259,
-        skills: ["React", "Java", "MySql"],
-        responsibilities: ["Design", "Develop", "Test"],
-      },
-    ];
+    return jobData1.jobs;
   }, []);
 
   const [jobData, setJobData] = useState(Jobs_Data);

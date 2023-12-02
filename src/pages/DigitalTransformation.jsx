@@ -23,7 +23,7 @@ const DigitalTransformation = () => {
       <section class="features-main my-2 values">
         <h1 class="md">Our Approach to Digital Transformation</h1>
         <div class="container grid shadow-box">
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Strategic Assessment</h3>
               <p>
@@ -34,7 +34,7 @@ const DigitalTransformation = () => {
               </p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Technology Integration</h3>
               <p>
@@ -45,7 +45,7 @@ const DigitalTransformation = () => {
               </p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Agile Development</h3>
               <p>
@@ -56,7 +56,7 @@ const DigitalTransformation = () => {
               </p>
             </p>
           </div>
-          <div class="card flex">
+          <div class="card flex flex-border">
             <p>
               <h3>Data-Driven Insights</h3>
               <p>
