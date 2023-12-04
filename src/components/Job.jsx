@@ -29,7 +29,7 @@ const Job = (props) => {
         <div className="description">{props.data.job_description}</div>
       </div>
       <div className="skills">
-        {props.data.skills.length >0 && <strong>Skills: </strong>}
+        {props.data.skills.length > 0 && <strong>Skills: </strong>}
         <ul className="horizontal-list">
           {props.data.skills.map((skill, id) => {
             return <li key={id}>{skill}</li>;
@@ -43,14 +43,18 @@ const Job = (props) => {
         <strong>Key Roles:</strong>
         <ul>
           {props.data.key_roles.map((res, id) => {
-            return <li className="role" key={id}>{res}</li>;
+            return (
+              <li className="role" key={id}>
+                {res}
+              </li>
+            );
           })}
           {/*<li>Design</li>
           <li>Develop</li>
         <li>Test</li>*/}
         </ul>
       </div>
-      {/*<button onClick={modalDialogHandler}>Apply</button>*/}
+      <button onClick={modalDialogHandler}>Apply</button>
     </div>
   );
 };
