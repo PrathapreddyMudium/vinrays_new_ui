@@ -3,11 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 const Job = (props) => {
   const cardRef = useRef(null);
   const [shouldShowScroll, setShouldShowScroll] = useState(false);
-  const modalDialogHandler = () => {
-    props.setModalOpen(true);
-    props.setJobCode(props.data.job_code);
-    props.setJobTitle(props.data.job_title);
-  };
+
   useEffect(() => {
     // Check if the content overflows the card
     const isOverflowing =
@@ -34,9 +30,6 @@ const Job = (props) => {
           {props.data.skills.map((skill, id) => {
             return <li key={id}>{skill}</li>;
           })}
-          {/*<li>Java</li>
-          <li>Java</li>
-        <li>Java</li>*/}
         </ul>
       </div>
       <div className="responsibilities">
@@ -49,12 +42,8 @@ const Job = (props) => {
               </li>
             );
           })}
-          {/*<li>Design</li>
-          <li>Develop</li>
-        <li>Test</li>*/}
         </ul>
       </div>
-      <button onClick={modalDialogHandler}>Apply</button>
     </div>
   );
 };

@@ -1,4 +1,3 @@
-import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
 const ContactUs = () => {
   const form = useRef();
@@ -10,21 +9,6 @@ const ContactUs = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_nxdmbvp",
-        "template_v0i0joq",
-        form.current,
-        "v1jfjFmpnQManhgUK"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
     setName("");
     setEmail("");
     setContact("");
@@ -108,15 +92,6 @@ const ContactUs = () => {
             <div className="cont-details">
               <div className="company-name">
                 <h6>VINRAYS SOLUTIONS PRIVATE LIMITED</h6>
-              </div>
-              <div className="d-flex contact-grid pt-3">
-                <div className="cont-left text-center me-3">
-                  <i class="fa-solid fa-building fa-2x"></i>
-                </div>
-                <div className="cont-right">
-                  <h6>Company Address</h6>
-                  <p>7676 Hillmont St, Houston, TX 77040, United States</p>
-                </div>
               </div>
               <div className="d-flex contact-grid pt-3">
                 <div className="cont-left text-center me-3">
