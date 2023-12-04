@@ -1,41 +1,22 @@
 {
-    "jobs":
-    [
-        {
-        "job_title": "Software Developer",
-        "job_code": 1234,
-        "skills": ["Javascript", "Springboot", "React"],
-        "responsibilities": ["Design", "Develop", "Test"]
-        },
-        {
-        "job_title": "Software Developer",
-        "job_code": 1255,
-        "skills": ["React", "Java", "MySql"],
-        "responsibilities": ["Design", "Develop", "Test"]
-        },
-        {
-        "job_title": "Software Developer",
-        "job_code": 1236,
-        "skills": ["Javascript", "Springboot", "React"],
-        "responsibilities": ["Design", "Develop", "Test"]
-        },
-        {
-        "job_title": "Software Developer",
-        "job_code": 1257,
-        "skills": ["React", "Java", "MySql"],
-        "responsibilities": ["Design", "Develop", "Test"]
-        },
-        {
-        "job_title": "Software Developer",
-        "job_code": 1238,
-        "skills": ["Javascript", "Springboot", "React"],
-        "responsibilities": ["Design", "Develop", "Test"]
-        },
-        {
-        "job_title": "Software Developer",
-        "job_code": 1259,
-        "skills": ["React", "Java", "MySql"],
-        "responsibilities": ["Design", "Develop", "Test"]
-        }
-    ]
+  "jobs": [
+    {
+      "job_title": "Senior Frontend Developer (React.js)",
+      "job_description": "As a Senior Frontend Developer, you will lead the charge in building robust and user-centric web applications using React.js. Collaborate with cross-functional teams, contribute to architectural decisions, and mentor junior developers. Your expertise will be crucial in shaping the future of our digital presence.",
+      "skills": [],
+      "key_roles": ["Lead the development of responsive and scalable frontend solutions.", "Collaborate with UX/UI designers to implement visually appealing and intuitive interfaces.", "Mentor and guide junior developers, fostering a culture of continuous learning.","Stay updated on industry best practices and emerging trends in frontend development","Contribute to code reviews, ensuring high-quality and maintainable code."]
+    },
+    {
+      "job_title": "Full Stack Developer (React/Node.js)",
+      "job_description": "Join us as a Full Stack Developer where you'll play a pivotal role in developing end-to-end solutions, with a focus on React and Node.js. From frontend interfaces to backend services, you'll contribute to creating seamless and efficient applications. Bring your passion for innovation to our dynamic team!",
+      "skills": [],
+      "key_roles": ["Develop and maintain both frontend and backend components of web applications.", "Collaborate with cross-functional teams to define and implement features.", "Optimize applications for performance, scalability, and responsiveness.","Participate in architectural decisions and contribute to the overall system design.","Troubleshoot, debug, and resolve issues across the full stack."]
+    },
+    {
+      "job_title": "UI/UX Designer (React)",
+      "job_description": "As a UI/UX Designer specializing in React, you'll be instrumental in translating design concepts into interactive and engaging user interfaces. Work closely with development teams to ensure seamless integration of design and functionality. Join us in creating visually stunning and user-friendly experiences.",
+      "skills": [],
+      "key_roles": ["Collaborate with product managers and developers to understand project requirements", "Create wireframes, mockups, and prototypes that align with design and user experience goals.", "Implement designs using React.js, ensuring a pixel-perfect and responsive UI.","Conduct usability testing and gather feedback to iterate on designs.","Stay informed about design trends and contribute to a design system for consistency."]
+    }
+  ]
 }

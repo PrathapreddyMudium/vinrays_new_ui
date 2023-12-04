@@ -74,11 +74,9 @@ const Careers = () => {
         </div>
         <div>
           <p>
-            <h2>Alternative Application Method</h2>
-            Prefer to send your application via email? No problem! You can also
-            forward your resume and cover letter to{" "}
-            <strong>careers@vinrays.com</strong>. Make sure to include the
-            position you are applying for in the subject line.
+            {/*<h2>Alternative Application Method</h2>*/}Please send your resume
+            and cover letter to <strong>careers@vinrays.com</strong>. Make sure
+            to include the position you are applying for in the subject line.
           </p>
         </div>
         <div>

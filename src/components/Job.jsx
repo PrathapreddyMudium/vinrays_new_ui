@@ -12,6 +12,8 @@ const Job = (props) => {
     // Check if the content overflows the card
     const isOverflowing =
       cardRef.current.scrollHeight > cardRef.current.clientHeight;
+    console.log(cardRef.current.scrollHeight);
+    console.log(cardRef.current.clientHeight);
     // Update the state based on overflow condition
     setShouldShowScroll(isOverflowing);
   }, [props.data.job_code]);
@@ -22,12 +24,12 @@ const Job = (props) => {
       ref={cardRef}
     >
       <h2>{props.data.job_title}</h2>
-      <div>
-        <strong className="job-code">Job Code: </strong>
-        <span>{props.data.job_code}</span>
+      <div className="description-container">
+        <strong className="job-code">Description: </strong>
+        <div className="description">{props.data.job_description}</div>
       </div>
       <div className="skills">
-        <strong>Skills: </strong>
+        {props.data.skills.length >0 && <strong>Skills: </strong>}
         <ul className="horizontal-list">
           {props.data.skills.map((skill, id) => {
             return <li key={id}>{skill}</li>;
@@ -38,17 +40,17 @@ const Job = (props) => {
         </ul>
       </div>
       <div className="responsibilities">
-        <strong>Responsibilities:</strong>
+        <strong>Key Roles:</strong>
         <ul>
-          {props.data.responsibilities.map((res, id) => {
-            return <li key={id}>{res}</li>;
+          {props.data.key_roles.map((res, id) => {
+            return <li className="role" key={id}>{res}</li>;
           })}
           {/*<li>Design</li>
           <li>Develop</li>
         <li>Test</li>*/}
         </ul>
       </div>
-      <button onClick={modalDialogHandler}>Apply</button>
+      {/*<button onClick={modalDialogHandler}>Apply</button>*/}
     </div>
   );
 };

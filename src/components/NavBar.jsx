@@ -1,11 +1,13 @@
 import React from "react";
+import logo from '../assests/logo/logo.jpg';
 import MyLink from "./MyLink";
 
 const NavBar = () => {
   return (
     <div class="navbar">
       <div class="container flex">
-        <h1 class="logo">Vinrays</h1>
+        {/*<h1 class="logo">Vinrays</h1>*/}
+        <img className="company-logo" src={logo} alt="logo"></img>
         <nav>
           <ul className="main-menu flex-1">
             <li>

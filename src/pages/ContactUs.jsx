@@ -1,4 +1,3 @@
-import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
 
 const ContactUs = () => {
@@ -12,7 +11,7 @@ const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
+    {/*emailjs
       .sendForm(
         "service_nxdmbvp",
         "template_v0i0joq",
@@ -26,7 +25,7 @@ const ContactUs = () => {
         (error) => {
           console.log(error.text);
         }
-      );
+      );*/}
       setName("");
       setEmail("");
       setContact("");
@@ -65,8 +64,8 @@ const ContactUs = () => {
         <div>
           <div className="contact-left">
             <div className="cont-details">
-              <div className="company-name"><h6>Vinrays</h6></div>
-              <div className="d-flex contact-grid pt-3">
+              <div className="company-name"><h6>VINRAYS SOLUTIONS PRIVATE LIMITED</h6></div>
+              {/*<div className="d-flex contact-grid pt-3">
                 <div className="cont-left text-center me-3">
                   <i class="fa-solid fa-building fa-2x"></i>
                 </div>
@@ -75,8 +74,8 @@ const ContactUs = () => {
                   <p>
                   7676 Hillmont St, Houston, TX 77040, United States
                   </p>
-                </div>
-              </div>
+  </div>
+  </div>*/}
               <div className="d-flex contact-grid pt-3">
                 <div className="cont-left text-center me-3">
                   <i class="fa-solid fa-phone-volume fa-2x"></i>
